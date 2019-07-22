@@ -12,7 +12,7 @@ const getData = async () => {
       method: 'POST',
       headers: {
         Accept: 'application/json',
-        'user-key': MY_API_KEY
+        'user-key': 'cc9c2b79c9b903c7e5c5dd721c77fb17'
       },
 
       // Request body
