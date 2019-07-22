@@ -10,7 +10,7 @@ const handleGameDetailsPost = async (req, res) => {
         method: 'POST',
         headers: {
           Accept: 'application/json',
-          'user-key': 'cc9c2b79c9b903c7e5c5dd721c77fb17'
+          'user-key': process.env.API_KEY
         },
 
         // Request body
@@ -18,7 +18,6 @@ const handleGameDetailsPost = async (req, res) => {
       });
 
       const data = await response.data;
-      console.log(data);
       return data;
     } catch (error) {
       console.log(error);

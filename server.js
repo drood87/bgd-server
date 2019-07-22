@@ -14,7 +14,6 @@ app.get('/', (req, res) => {
 });
 
 app.get('/company', async (req, res) => {
-  console.log(await company.handleCompanyGet(req, res));
   return res.json(await company.handleCompanyGet(req, res));
 });
 
